@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles</title>
+    <title>Article</title>
 </head>
 <body>
     
-    <h1>Liste des articles</h1>
-    
-    <h2>{{$ok}}</h2>
 
-    @foreach ( $posts as $post )
-        <h3>{{ $post }}</h3>
-    @endforeach
-    
+    <h1>{{ $post }}</h1>
+
 
 </body>
 </html>

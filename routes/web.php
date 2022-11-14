@@ -20,4 +20,7 @@ use App\Http\Controllers\postController;
 
 // Route::get('/', 'App\Http\Controllers\postController@index'); // en passant par un controller
 
- Route::get('/',[postController::class,'index']); // simplifier grace a l'extention vscode "php namespace resolver", appeler un array postcontroller::class puis clique droit importer class se qui va l'ajouter en haut de page. ( use ... ), suivis du nom de la fonction utiliser dans postcontroller
+Route::get('/', [postController::class, 'index']); // simplifier grace a l'extention vscode "php namespace resolver", appeler un array postcontroller::class puis clique droit importer class se qui va l'ajouter en haut de page. ( use ... ), suivis du nom de la fonction utiliser dans postcontroller
+
+Route::get('/posts/{id}', [postController::class, 'show']);
+Route::get('/contact', [postController::class, 'contact']);
