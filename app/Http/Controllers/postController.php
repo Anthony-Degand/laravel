@@ -24,12 +24,16 @@ class postController extends Controller
             2 => 'Mon titre num 2'
         ];
 
-        $post = $posts[$id]; // je crée une variable post égale a ma variable post"s" au dessus 
+        $post = $posts[$id] ?? 'pas de titre'; // je crée une variable post qui vos ma variable post"s" (id) ou si pas " pas de titre" 
 
         return view('article', [ // je retourne une vue de article , et post suivis de l'id du titre d'article voulus
             'post' => $post
         ]);
     }
 
+
+    public function contact(){
+        return view('contact');
+    }
 }
 
